@@ -1,0 +1,32 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name apisite",
+    "stop": "pm2 kill",
+    "restart": "git pull && npm stop && npm start",
+    "stash": "git stash && git stash drop"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@sl-code-lords/web_screenshot": "^0.0.1-dev",
+    "axios": "^1.7.5",
+    "crypto": "^1.0.1",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "fetch": "^1.1.0",
+    "path": "^0.12.7",
+    "pexels": "^1.4.0",
+    "pm2":"^5.2.0",
+    "request": "^2.88.2",
+    "@dark-yasiya/nexara": "^1.0.0",
+    "form-data": "latest",
+    "cookie": "latest",
+    "request": "^2.88.2",
+    "url": "latest",
+    "mathjs": "latest",
+    "dark-yasiya": "0.0.2-security"
+  }
+}
