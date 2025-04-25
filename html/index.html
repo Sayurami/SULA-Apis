@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>𝐒𝐔𝐋𝐀 𝐀𝐏𝐈</title>
+<meta name="description" content="An api site for developers. No login, No limit, Easy to use and 24/7 online.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<link href="img/sula.jpg" rel="icon">
+<link href="img/sula.jpg" rel="apple-touch-icon">
+
+<link href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="https://ferdiz-afk.github.io/Nice/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+<link href="https://ferdiz-afk.github.io/Nice/assets/css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://dropways.github.io/deskapp/vendors/styles/core.css" />
+<link rel="stylesheet" type="text/css" href="https://dropways.github.io/deskapp/vendors/styles/icon-font.min.css" />
+<link rel="stylesheet" type="text/css" href="https://dropways.github.io/deskapp/src/plugins/cropperjs/dist/cropper.css" />
+<link rel="stylesheet" type="text/css" href="https://dropways.github.io/deskapp/vendors/styles/style.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" type="text/css" media="all" />    
+
+
+
+
+
+
+
+    
+
+    
+</head>
+<div class="pre-loader">
+  <div class="pre-loader-box">
+    <div class="loader-logo">
+      <img src="https://i.ibb.co/4R111Twr/SulaMd.jpg" alt="" />
+    </div>
+    <div class="loader-progress" id="progress_div">
+      <div class="bar" id="bar1"></div>
+    </div>
+    <div class="percent" id="percent1">0%</div>
+    <div class="loading-text">Loading...</div>
+  </div>
+</div>
+<body>
+<header id="header" class="header fixed-top d-flex align-items-center" style="width:100%">
+<div class="d-flex align-items-center justify-content-between">
+<div class="toggles">
+<i id="toggle-icon" class="bi bi-list toggle-sidebar-btn"></i>
+</div>
+</div>
+<nav class="header-nav ms-auto">
+<ul class="d-flex align-items-center">
+<li class="nav-item d-block d-lg-none">
+<a class="nav-link nav-icon search-bar-toggle" style="margin-right: -15px;">
+<i class="fa fa-search faa-ring animated faa-slow"></i>
+</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown" style="margin-right: -15px;">
+<i class="bi bi-chat-left-text"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages pe-3 alight-center">
+<li class="dropdown-header">
+use this chat box properly and correctly.
+<a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Chat-box</span></a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li class="message-item">
+<a href="#">
+<iframe src="https://www5.cbox.ws/box/?boxid=956517&boxtag=uuko7S" width="100%" height="550" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li class="dropdown-footer">
+<a href="#"></a>
+</li>
+</ul>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown" style="margin-right: -15px;">
+<i class="bi bi-clock"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages pe-3 alight-center">
+<li class="dropdown-header">
+You can see time by below clock.
+<a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Clock</span></a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li class="message-item">
+<a href="#">
+<iframe src="https://digital-analog-clock-kappa.vercel.app/" width="100%" height="550" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li class="dropdown-footer">
+<a href="#"></a>
+</li>
+</ul>
+</li>
+
+
+    
+<li class="nav-item dropdown pe-3">
+<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+<div class="position-relative">
+<img class="rounded-circle" src="img/sula.jpg" alt>
+<div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+</div>
+</a>
+<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a class="dropdown-item d-flex align-items-center" href="/">
+<i class="bi bi-house-door"></i>
+<span>Dashboard</span>
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</header>
+<aside id="sidebar" class="sidebar" style="z-index:122;">
+<ul class="sidebar-nav" id="sidebar-nav">
+<h1 class="text-2xl text-center mt-4">SULA - <span class="text-primary">APIs</span></h1>
+<div class="mt-8">
+<div class="mb-4 relative lg:hidden false">
+</div>
+<li class="nav-item">
+<a class="nav-link collapsed" href="">
+<i class="bi bi-house"></i>
+<span>Dashboard</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="/changelog">
+<i class="bi bi-repeat"></i>
+<span>Changelog</span>
+</a>
+</li>
+<li class="nav-heading">API FEATURE</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="/movie">
+<i class="bi bi-filetype-mov">
+</i>
+<span>Movie </span>
+</a>
+  
+<a class="nav-link collapsed" href="/news">
+<i class="bi bi-newspaper">
+</i>
+<span>News </span>
+</a>
+<a class="nav-link collapsed" href="/download">
+<i class="bi bi-download">
+</i>
+<span>Download </span>
+</a>  
+<a class="nav-link collapsed" href="/more">
+<i class="bi bi-browser-firefox me-2">
+</i>
+<span>More </span>
+</a>  
+
+<a class="nav-link collapsed" href="/search">
+<i class="bi bi-gear-wide-connected me-2">
+</i>
+<span>Search </span>
+</a>
+
+<a class="nav-link collapsed" href="/ai">
+<i class="bi bi-tools me-2">
+</i>
+<span>Ai </span>
+</a>
+
+    
+</li>
+
+<li class="nav-heading">Contact</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="https://wa.me/94760663483" target="_blank">
+<i class="bi bi-whatsapp"></i>
+<span>WhatsApp</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href="https://github.com/sulamd" target="_blank">
+<i class="bi bi-github"></i>
+<span>Github</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link collapsed" href=" https://whatsapp.com/channel/0029Vb65iOZKwqSNKecV8V07">
+<i class="bi bi-exclamation-lg"></i>
+<span>Help center</span>
+</a>
+</li>
+</ul>
+</aside>
+<script>
+function _0x2587(_0x5a685a,_0x13851b){const _0x490f08=_0x490f();return _0x2587=function(_0x2587eb,_0x472878){_0x2587eb=_0x2587eb-0x131;let _0x144c16=_0x490f08[_0x2587eb];return _0x144c16;},_0x2587(_0x5a685a,_0x13851b);}function _0x490f(){const _0x3795bc=['1572809nyhGDM','addEventListener','querySelector','error','662544aMageI','click','.search-bar-toggle','37590BWitrk','toggle','div.search-bar','6Tdneqh','remove','#toggle-icon','864OVJppi','26627571bgUxIV','31691xRPkaB','search-bar-show','closest','classList','2257572OQDOei','toggle-sidebar','bi-x-lg','249800DujRFs','replace','.toggles','contains','bi-list','toggle-sidebar-btn'];_0x490f=function(){return _0x3795bc;};return _0x490f();}const _0x2d3876=_0x2587;(function(_0x3d94bf,_0x4eee17){const _0x149d68=_0x2587,_0x32d5de=_0x3d94bf();while(!![]){try{const _0x32af34=parseInt(_0x149d68(0x149))/0x1+-parseInt(_0x149d68(0x13e))/0x2*(parseInt(_0x149d68(0x144))/0x3)+-parseInt(_0x149d68(0x131))/0x4+-parseInt(_0x149d68(0x141))/0x5*(parseInt(_0x149d68(0x147))/0x6)+parseInt(_0x149d68(0x13a))/0x7+-parseInt(_0x149d68(0x134))/0x8+parseInt(_0x149d68(0x148))/0x9;if(_0x32af34===_0x4eee17)break;else _0x32d5de['push'](_0x32d5de['shift']());}catch(_0x4b09fd){_0x32d5de['push'](_0x32d5de['shift']());}}}(_0x490f,0xd5703));try{((()=>{const _0x59a4e0=_0x2587,_0x232ed4=_0x45b24c=>document[_0x59a4e0(0x13c)](_0x45b24c),_0x416609=_0x232ed4(_0x59a4e0(0x146));document[_0x59a4e0(0x13b)]('click',_0x93dd52=>{const _0x422855=_0x59a4e0;_0x93dd52=_0x93dd52['target'];if(!_0x93dd52['classList']['contains'](_0x422855(0x139))&&_0x232ed4('body')[_0x422855(0x14c)][_0x422855(0x137)](_0x422855(0x132))&&!_0x93dd52[_0x422855(0x14b)]('.sidebar'))_0x232ed4('body')['classList'][_0x422855(0x145)](_0x422855(0x132));if(!_0x93dd52[_0x422855(0x14b)](_0x422855(0x140))&&_0x232ed4(_0x422855(0x143))[_0x422855(0x14c)][_0x422855(0x137)](_0x422855(0x14a))&&!_0x93dd52['closest']('div.search-bar'))_0x232ed4(_0x422855(0x143))[_0x422855(0x14c)]['remove']('search-bar-show');}),_0x416609['addEventListener'](_0x59a4e0(0x13f),()=>{const _0x336f29=_0x59a4e0;_0x416609[_0x336f29(0x14c)]['toggle']('bi-list'),_0x416609['classList'][_0x336f29(0x142)]('bi-x-lg');}),document[_0x59a4e0(0x13b)]('click',_0x7e4997=>{const _0x51bfad=_0x59a4e0;!_0x7e4997['target'][_0x51bfad(0x14b)](_0x51bfad(0x136))&&_0x416609['classList'][_0x51bfad(0x137)]('bi-x-lg')&&_0x416609[_0x51bfad(0x14c)][_0x51bfad(0x135)](_0x51bfad(0x133),_0x51bfad(0x138));});})());}catch(_0x2ae519){console[_0x2d3876(0x13d)](_0x2ae519);}
+</script>
+<main id="main" class="main">
+<section class="section dashboard">
+<div class="row">
+<div class="col-lg-12">
+<div class="row">
+<div class="content-wrapper text-center col-xxl-4 col-xl-12">
+</div>
+<div class="col-xxl-4 col-md-6">
+<div class="card info-card">
+<div class="card-body">
+<h5 class="card-title">Clock</h5>
+<div class="d-flex align-items-center">
+<div class="card-icon alert alert-primary rounded-circle d-flex align-items-center justify-content-center">
+<i class="bi bi-clock"></i>
+</div>
+<div class="ps-3">
+<div class="weight-700 font-24 text-dark" id="browser_info">000</div>
+<div class="font-14 text-secondary weight-500" id="browser_sholat"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-4 col-md-6">
+<div class="card info-card">
+<div class="card-body">
+<h5 class="card-title">Today Visitors </h5>
+<div class="d-flex align-items-center">
+<div class="card-icon alert alert-info rounded-circle d-flex align-items-center justify-content-center">
+<i class="bi bi-eye"></i>
+</div>
+<div class="ps-3">
+<div class="weight-700 font-24 text-dark" id="visitor-count-sula">0</div>
+<div class="font-14 text-secondary weight-500">Today Requests</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-4 col-xl-12">
+<div class="card info-card">
+<div class="card-body">
+<h5 class="card-title">Total Visitors</h5>
+<div class="d-flex align-items-center">
+<div class="card-icon alert alert-warning rounded-circle d-flex align-items-center justify-content-center">
+<i class="bi bi-bar-chart-fill"></i>
+</div>
+<div class="ps-3">
+<h6><span id="total-requests-sula">0</span></h6>
+<span class="text-muted small pt-2 ps-1">Total All Request</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-4 col-xl-12">
+<div class="card info-card ">
+<div class="card-body">
+<h5 class="card-title">Battery Info</h5>
+<div class="d-flex align-items-center">
+<div class="card-icon alert alert-success rounded-circle d-flex align-items-center justify-content-center">
+<i class="bi bi-battery-full"></i>
+</div>
+<div class="ps-3">
+<div class="weight-700 font-24 text-dark" id="battery-level">%</div>
+<div class="font-14 text-secondary weight-500" id="charging-status">charging</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-4 col-xl-12">
+<a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
+<div class="card-body">
+<strong><i class="bi bi-people-fill"></i>  𝐒𝐔𝐋𝐀𝐊𝐒𝐇𝐀 𝐌𝐀𝐃𝐀𝐑𝐀</strong>
+<div class="row">
+<div class="col-auto">
+<ul>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<script>
+function _0x4d6b(){const _0xd2a262=['2660676XuArIx','Set\x20status\x20','5365104VpzLLa','getElementById','charging-status','catch','998625JJqAsd','getBattery','innerHTML','14021jMITDP','discharging','534WjNzoR','levelchange','Battery\x20API\x20not\x20supported\x20on\x20your\x20device/computer','15461874zdgmbZ','632549wgonVK','1313812hYKzgJ','then','addEventListener','level','3vFaNIH'];_0x4d6b=function(){return _0xd2a262;};return _0x4d6b();}function _0x15c3(_0x58ef58,_0x1982bc){const _0x4d6b59=_0x4d6b();return _0x15c3=function(_0x15c3a9,_0x160f0f){_0x15c3a9=_0x15c3a9-0x130;let _0x2a1c9b=_0x4d6b59[_0x15c3a9];return _0x2a1c9b;},_0x15c3(_0x58ef58,_0x1982bc);}(function(_0x1d5cc2,_0x31213d){const _0x379195=_0x15c3,_0x2254a1=_0x1d5cc2();while(!![]){try{const _0x568cc5=parseInt(_0x379195(0x13d))/0x1+-parseInt(_0x379195(0x13e))/0x2*(parseInt(_0x379195(0x142))/0x3)+-parseInt(_0x379195(0x143))/0x4+-parseInt(_0x379195(0x134))/0x5+parseInt(_0x379195(0x139))/0x6*(parseInt(_0x379195(0x137))/0x7)+-parseInt(_0x379195(0x130))/0x8+parseInt(_0x379195(0x13c))/0x9;if(_0x568cc5===_0x31213d)break;else _0x2254a1['push'](_0x2254a1['shift']());}catch(_0x131a91){_0x2254a1['push'](_0x2254a1['shift']());}}}(_0x4d6b,0x521ec),(function(){const _0x5b9e1d=_0x15c3;let _0x37c3c3=document[_0x5b9e1d(0x131)]('battery-level'),_0x105597=document[_0x5b9e1d(0x131)](_0x5b9e1d(0x132));navigator[_0x5b9e1d(0x135)]()[_0x5b9e1d(0x13f)](_0x17cae5=>{const _0x39a836=_0x5b9e1d;if(_0x17cae5){function _0x2e81e5(){const _0x2e6c3f=_0x15c3;_0x37c3c3[_0x2e6c3f(0x136)]=Math['round'](_0x17cae5[_0x2e6c3f(0x141)]*0x64)+'%',_0x105597[_0x2e6c3f(0x136)]=_0x17cae5['charging']?'⚡⚡':_0x2e6c3f(0x138),console['log'](_0x2e6c3f(0x144)+_0x37c3c3[_0x2e6c3f(0x136)]+'\x20'+_0x105597['innerHTML']);}_0x2e81e5(),_0x17cae5[_0x39a836(0x140)](_0x39a836(0x13a),_0x2e81e5,![]),_0x17cae5[_0x39a836(0x140)]('chargingchange',_0x2e81e5,![]);}else throw new Error(_0x39a836(0x13b));})[_0x5b9e1d(0x133)](_0x4a6576=>{});}()));
+</script>
+<script type="text/javascript">
+const _0x24abc0=_0x350d;function _0x350d(_0x2fead4,_0x45790b){const _0x2fc23e=_0x2fc2();return _0x350d=function(_0x350dbd,_0x588639){_0x350dbd=_0x350dbd-0x6f;let _0x49ad6a=_0x2fc23e[_0x350dbd];return _0x49ad6a;},_0x350d(_0x2fead4,_0x45790b);}(function(_0x3c626b,_0x26ea26){const _0x1419bd=_0x350d,_0x3eab1f=_0x3c626b();while(!![]){try{const _0x2c11cc=-parseInt(_0x1419bd(0x79))/0x1+-parseInt(_0x1419bd(0x6f))/0x2*(parseInt(_0x1419bd(0x8a))/0x3)+parseInt(_0x1419bd(0x76))/0x4*(-parseInt(_0x1419bd(0x81))/0x5)+-parseInt(_0x1419bd(0x85))/0x6+parseInt(_0x1419bd(0x7f))/0x7*(parseInt(_0x1419bd(0x71))/0x8)+parseInt(_0x1419bd(0x7b))/0x9+-parseInt(_0x1419bd(0x70))/0xa*(-parseInt(_0x1419bd(0x78))/0xb);if(_0x2c11cc===_0x26ea26)break;else _0x3eab1f['push'](_0x3eab1f['shift']());}catch(_0x3e22a7){_0x3eab1f['push'](_0x3eab1f['shift']());}}}(_0x2fc2,0x2b479));let text_el=document['querySelector']('div#browser_info'),hSalam=document[_0x24abc0(0x7c)](_0x24abc0(0x89));setInterval(()=>{const _0x1ace5e=_0x24abc0,_0x2789a8=new Date(),_0x3a29af=_0x2789a8[_0x1ace5e(0x80)]()[_0x1ace5e(0x86)]()[_0x1ace5e(0x75)](0x2,'0'),_0x10a4d5=_0x2789a8[_0x1ace5e(0x7e)]()[_0x1ace5e(0x86)]()['padStart'](0x2,'0'),_0x3935c6=_0x2789a8['getSeconds']()[_0x1ace5e(0x86)]()[_0x1ace5e(0x75)](0x2,'0'),_0x5efad9=getGreeting(_0x3a29af);hSalam['innerHTML']=_0x5efad9,text_el[_0x1ace5e(0x7d)]=_0x3a29af+':'+_0x10a4d5+':'+_0x3935c6;},0xfa);function _0x2fc2(){const _0x1b2840=['innerHTML','getMinutes','28749ysACWq','getHours','5TCmjaM','18:10','Selamat\x20Siang\x20kak!','17:00','497082ARUYsP','toString','10:00','Petang!','div#browser_sholat','318165KAGcwY','2DFLDpA','10BcczGZ','280PNGAjL','14:00','17:30','06:00','padStart','1082220lOrvPZ','Good\x20morning!','3862573RldGdB','173225CJSMvV','Hello!','2835603bwoyix','querySelector'];_0x2fc2=function(){return _0x1b2840;};return _0x2fc2();}function getGreeting(_0x268eb2){const _0x4ad14e=_0x24abc0;if(_0x268eb2>='04:00'&&_0x268eb2<='06:00')return'Subuh!';else{if(_0x268eb2>=_0x4ad14e(0x74)&&_0x268eb2<=_0x4ad14e(0x87))return _0x4ad14e(0x77);else{if(_0x268eb2>='10:00'&&_0x268eb2<='14:00')return _0x4ad14e(0x83);else{if(_0x268eb2>=_0x4ad14e(0x72)&&_0x268eb2<=_0x4ad14e(0x84))return _0x4ad14e(0x7a);else{if(_0x268eb2>=_0x4ad14e(0x84)&&_0x268eb2<='17:30')return _0x4ad14e(0x88);else return _0x268eb2>=_0x4ad14e(0x73)&&_0x268eb2<=_0x4ad14e(0x82)?'Clock!':'Time';}}}}}
+</script>
+<footer id="footer" class="footer">
+<div class="copyright">
+&copy; Copyright
+<strong>
+<span id="copyrightYearRange"></span>
+</strong> SULA API
+</div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+<i class="bi bi-arrow-up-short"></i>
+</a>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/chart.js/chart.umd.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/echarts/echarts.min.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/quill/quill.min.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/simple-datatables/simple-datatables.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/vendor/php-email-form/validate.js"></script>
+<script src="https://ferdiz-afk.github.io/Nice/assets/js/main.js"></script>
+<script>
+function _0x1a07(_0x30a0f7,_0x266da4){const _0x1ce287=_0x1ce2();return _0x1a07=function(_0x1a0725,_0x5ca3e5){_0x1a0725=_0x1a0725-0x76;let _0x3ae4ff=_0x1ce287[_0x1a0725];return _0x3ae4ff;},_0x1a07(_0x30a0f7,_0x266da4);}const _0x319bab=_0x1a07;(function(_0x6e8eeb,_0x4ad3ed){const _0x58471e=_0x1a07,_0x258bc3=_0x6e8eeb();while(!![]){try{const _0x3fafff=parseInt(_0x58471e(0x7d))/0x1*(parseInt(_0x58471e(0x79))/0x2)+parseInt(_0x58471e(0x8a))/0x3+-parseInt(_0x58471e(0x81))/0x4+parseInt(_0x58471e(0x76))/0x5+parseInt(_0x58471e(0x7b))/0x6+parseInt(_0x58471e(0x7e))/0x7*(-parseInt(_0x58471e(0x7a))/0x8)+parseInt(_0x58471e(0x78))/0x9*(parseInt(_0x58471e(0x7c))/0xa);if(_0x3fafff===_0x4ad3ed)break;else _0x258bc3['push'](_0x258bc3['shift']());}catch(_0x196846){_0x258bc3['push'](_0x258bc3['shift']());}}}(_0x1ce2,0x35ba2));const screen=document[_0x319bab(0x84)]('screen');window[_0x319bab(0x82)](_0x319bab(0x87),0x3e8);function getScreen(){const _0x5e9b56=_0x319bab,_0xd8440a=window[_0x5e9b56(0x86)][_0x5e9b56(0x77)],_0x211ff9=window[_0x5e9b56(0x86)][_0x5e9b56(0x80)],_0xc4ab0b=window[_0x5e9b56(0x86)]['orientation'][_0x5e9b56(0x88)];screen[_0x5e9b56(0x89)]=_0x5e9b56(0x7f)+_0xd8440a+_0x5e9b56(0x85)+_0x211ff9+_0x5e9b56(0x83)+_0xc4ab0b;};function _0x1ce2(){const _0x52c21c=['4wWTrlp','95464bSbxdl','26292KEwNlx','10vESUvz','1653kACYar','35CGDAHT','Width\x20','height','771584TWYbry','setTimeout',',\x20Orientation\x20','getElementById',',\x20Height\x20','screen','getScreen()','type','textContent','22971iutlEQ','995865MhFrZB','width','2322981rPFUfN'];_0x1ce2=function(){return _0x52c21c;};return _0x1ce2();}
+  </script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    $("#open-modal-btn").on("click", function() {
+      $("#iframeModal").modal("show");
+    });
+  </script>
+<script>
+// [Visitor]
+fetch("https://visitor.api.akuari.my.id/umum/view/tambah-ip?id=darkyasiya")
+  .then((response) => response.json())
+  .then((data) => {
+    const visitorCount = data?.visitor?.total; 
+    const visitorCountTdy = data?.visitor?.hari; 
+    if (visitorCount !== undefined) {
+      document.getElementById("visitor-count").innerText = visitorCountTdy;
+      document.getElementById("total-requests").innerText = visitorCount;
+    } else {
+      console.error("Visitor count not available.");
+    }
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+
+// [Year]
+const currentYear = new Date().getFullYear();
+const startYear = 2025;
+
+document.getElementById('copyrightYearRange').innerText = `${startYear}-${currentYear}`;
+</script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://dropways.github.io/deskapp/vendors/scripts/core.js"></script>
+<script src="https://dropways.github.io/deskapp/vendors/scripts/script.min.js"></script>
+<script src="https://dropways.github.io/deskapp/vendors/scripts/process.js"></script>
+<script src="https://dropways.github.io/deskapp/vendors/scripts/layout-settings.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/cropperjs/dist/cropper.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+<script src="https://dropways.github.io/deskapp/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+<script>
+    </script>
+    <script>(function(){var js = "window['__CF$cv$params']={r:'7f354729da3b18be',t:'MTY5MTQ3MTY5MC4yMTUwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+</html>
