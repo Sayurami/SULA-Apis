@@ -14,13 +14,6 @@ const Lankadeepa = require('./lib/news/lankadeepa');
 const Bbc = require('./lib/news/bbc');
 
 
-const Sinhalasub = require('./lib/movie/sinhalasub');
-const sinhalasub = new Sinhalasub();
-const Pirate = require('./lib/movie/pirate');
-const pirate = new Pirate();
-const Zoom = require('./lib/movie/zoom');
-const zoom = new Zoom();
-const { firemovie}  = require("./lib/movie/firemovie")
 
 
 const { logo } = require("./lib/more/logo");
